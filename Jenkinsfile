@@ -3,11 +3,11 @@ pipeline
     agent any
     stages
     {
-        stage('master-branch')
+        stage('prod-branch')
         {
             when
             {
-                branch 'master'
+                branch 'prod'
             }
             steps
             {
