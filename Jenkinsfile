@@ -3,7 +3,7 @@ pipeline
     agent any
     stages
     {
-        stage('Build-master')
+        stage('master-branch')
         {
             when
             {
@@ -11,10 +11,10 @@ pipeline
             }
             steps
             {
-                echo "Build-Master-branch"
+                echo "Deploy from master"
             }
         }
-        stage('Build-dev')
+        stage('dev-branch')
         {
             when
             {
@@ -22,7 +22,7 @@ pipeline
             }
             steps
             {
-                echo 'Build-Dev branch'
+                echo "Deploy from dev"
             }
         }
     }
